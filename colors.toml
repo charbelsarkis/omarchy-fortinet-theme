@@ -1,0 +1,43 @@
+# Fortinet — built on the Fortinet brand palette.
+#
+# Surfaces   PMS 7546 slate family (#253746) deepened toward black.
+# Accent     Fortinet Red PMS 485C (#da291c), kept for focus and emphasis.
+# Support    Fortinet teal / blue / purple; orange and yellow carry status only.
+#
+# Every text colour clears 3:1 on the background, and the syntax hues clear
+# WCAG AA (4.5:1). The one exception is the brand red accent, which is used
+# on borders and fills, never on body text.
+mode = "dark"
+
+accent = "#da291c"
+selection = "#4a1620"
+muted = "#627482"
+
+background = "#131e29"
+dark_background = "#0e1720"
+darker_background = "#091017"
+lighter_background = "#253746"
+
+foreground = "#d9e1e2"
+dark_foreground = "#8696a2"
+light_foreground = "#b4c0c4"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "rgba(ff4a3dff) rgba(da291cff) rgba(7a1430dd) 135deg"
+hyprland_inactive_border = "rgba(2a3d4dcc)"
+
+red = "#f04a3a"
+yellow = "#ffd100"
+orange = "#ff8200"
+green = "#5cc08a"
+cyan = "#6ad1e3"
+blue = "#4a9ae6"
+magenta = "#a986dc"
+brown = "#b5764a"
+
+bright_red = "#ff7466"
+bright_yellow = "#ffe066"
+bright_green = "#86dbad"
+bright_cyan = "#9ce3ef"
+bright_blue = "#7cb8f2"
+bright_magenta = "#c7abee"

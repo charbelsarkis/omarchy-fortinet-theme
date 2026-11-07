@@ -1,0 +1,141 @@
+# Fortinet shell surfaces — replaces the generated shell.toml.
+#
+# Design rules:
+#   * Slate surfaces, layered dark (#091017) → panel (#0e1720) → raised (#253746).
+#   * Neutral chrome at rest; Fortinet Red appears only for focus, selection
+#     and live state, so it always means "this one".
+#   * Overlays (launcher, menus, notifications, popups) share the window border
+#     gradient so they read as part of the same system as the windows.
+
+[bar]
+background       = "#091017"
+background-alpha = 0.92
+text             = "#c9d3d6"
+active           = "#ff4a3d"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "rgba(ff4a3dff) rgba(da291cff) rgba(7a1430dd) 135deg"
+active-border-foreground = "rgba(ff4a3dff) rgba(da291cff) rgba(7a1430dd) 135deg"
+
+[controls]
+# Rest: quiet slate outline, no red.
+normal-color        = "#d9e1e2"
+normal-fill-alpha   = 0.035
+normal-border       = "#8696a2"
+normal-border-width = 1
+normal-border-alpha = 0.22
+
+# Hover / keyboard cursor: red edge, faint red wash.
+hover-cursor-color        = "#ffffff"
+hover-cursor-fill-alpha   = 0.08
+hover-cursor-border       = "#da291c"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.55
+
+focus-color        = "#ffffff"
+focus-fill-alpha   = 0.08
+focus-border       = "#da291c"
+focus-border-width = 1
+focus-border-alpha = 0.55
+
+# Selected: the persistent "current" state. Solid brand-red tint.
+selected-color        = "#ff4a3d"
+selected-fill-alpha   = 0.16
+selected-border       = "#da291c"
+selected-border-width = 1
+selected-border-alpha = 0.7
+
+pressed-fill-alpha   = 0.24
+selection-fill-alpha = 0.40
+
+[spacing]
+scale = 1.0
+scale-with-font = true
+
+[font]
+base-size = 12
+
+[popups]
+background       = "#0e1720"
+background-alpha = 0.97
+text             = "#d9e1e2"
+border           = "hyprland.active-border"
+border-alpha     = 1.0
+
+[tooltip]
+background       = "#0e1720"
+background-alpha = 0.98
+text             = "#d9e1e2"
+border           = "#3a4f61"
+border-alpha     = 1.0
+
+[notifications]
+background       = "#0e1720"
+background-alpha = 0.96
+text             = "#d9e1e2"
+border           = "hyprland.active-border"
+border-alpha     = 1.0
+countdown        = "#da291c"
+
+[launcher]
+background                = "#0e1720"
+background-alpha          = 0.95
+text                      = "#d9e1e2"
+border                    = "hyprland.active-border"
+border-alpha              = 1.0
+scrim                     = "#05090d"
+scrim-alpha               = 0.55
+selected-background       = "#da291c"
+selected-background-alpha = 0.16
+selected-text             = "#ffffff"
+selected-border           = "#da291c"
+selected-border-alpha     = 0.65
+
+[menu]
+background                = "#0e1720"
+background-alpha          = 0.97
+text                      = "#d9e1e2"
+border                    = "hyprland.active-border"
+border-alpha              = 1.0
+scrim                     = "#05090d"
+scrim-alpha               = 0.55
+selected-background       = "#da291c"
+selected-background-alpha = 0.16
+selected-text             = "#ffffff"
+selected-border           = "#da291c"
+selected-border-alpha     = 0.65
+
+[polkit]
+background       = "#0e1720"
+background-alpha = 1.0
+text             = "#d9e1e2"
+text-error       = "#ff7466"
+border           = "hyprland.active-border"
+border-error     = "#ff7466"
+border-alpha     = 1.0
+scrim            = "#05090d"
+scrim-alpha      = 0.72
+accent           = "#ff4a3d"
+
+[lock]
+background       = "#0b131b"
+background-alpha = 0.86
+text             = "#ffffff"
+placeholder      = "#8696a2"
+text-error       = "#ff7466"
+border           = "#3a4f61"
+border-active    = "rgba(ff4a3dff) rgba(da291cff) rgba(7a1430ff) 90deg"
+border-error     = "#ff7466"
+border-alpha     = 1.0
+selection        = "#da291c"
+selection-alpha  = 0.45
+
+[image-picker]
+text                    = "#d9e1e2"
+selected-border         = "#ff4a3d"
+selected-border-alpha   = 1.0
+unselected-border       = "#8696a2"
+unselected-border-alpha = 0.22
