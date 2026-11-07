@@ -25,9 +25,9 @@ Or pick it from **Menu → Install → Style → Theme** once it's listed on [th
 
 | # | Name | |
 |---|------|---|
-| 1 | firewall | The logo on a firewall face, under fire |
-| 2 | threatmap | A global threat map |
-| 3 | asic | A security processor (SPU) |
+| 1 | asic | A security processor (SPU), the default wallpaper |
+| 2 | firewall | The logo on a firewall face, under fire |
+| 3 | threatmap | A global threat map |
 | 4 | gateway | Traffic streaming through the logo |
 | 5 | datacenter | A server aisle |
 | 6 | sentinel | Centered logo with a soft glow (4K) |
